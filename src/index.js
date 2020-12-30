@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PrescriptionCard from './component/PrescriptionCard';
-import PrescriptionList from './component/PrescriptionList';
+import PrescriptionCard from './components/PrescriptionCard';
+import PrescriptionList from './components/PrescriptionList';
 const App = () => {
 
   return (
