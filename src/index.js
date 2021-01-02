@@ -8,8 +8,8 @@ const App = () => {
 
   return (
     <div className="ui container">
-      {/* <PrescriptionCard />
-      <PrescriptionList /> */}
+      <PrescriptionCard />
+      <PrescriptionList />
       <Detailsform/>
       
     </div>
