@@ -2,7 +2,7 @@ import React from 'react';
 
 const Detailsform = () => {
     return (
-        <form className="ui form">
+        <form >
             <div className="ui equal width grid">
                 <div className="row"></div>
                 <h4 className="ui horizontal divider">Personal Information</h4>
@@ -51,6 +51,7 @@ const Detailsform = () => {
                         <div className="ui segment">3</div>
                     </div>
                 </div>
+            </div>    
                 <div className="ui equal width grid">
 
                     <div className="row">
@@ -74,12 +75,11 @@ const Detailsform = () => {
                             <div className="sub header">Street Address Line 2</div>
                             <div className="ui segment">2</div>
                         </div>
-
                     </div>
                     <div className="row">
                         <div className="column">
                             <div className="sub header">City</div>
-                            <div className="ui segment">2</div>
+                            <div className="ui segment">1</div>
                         </div>
                         <div className="column">
                             <div className="sub header">State</div>
@@ -87,13 +87,16 @@ const Detailsform = () => {
                         </div>
                         <div className="column">
                             <div className="sub header">Pincode</div>
-                            <div className="ui segment">2</div>
+                            <div className="ui segment">1</div>
                         </div>
                     </div>
+
+                   
                 </div>
                 <div className="ui equal width grid">
                     <div className="row"></div>
                     <h4 className="ui horizontal divider">In Case Of Emergency</h4>
+                    
                     <div className="row">
 
                         <div className="column">
@@ -109,7 +112,6 @@ const Detailsform = () => {
                             <div className="ui segment">2</div>
                         </div>
                     </div>
-
                     <div className="row">
                         <div className="column">
                             <div className="sub header">Relationship</div>
@@ -122,7 +124,7 @@ const Detailsform = () => {
                     </div>
 
                 </div>
-            </div>
+            
         </form>
 
     );
