@@ -3,15 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.5.3",
+    "antd": "^4.9.4",
     "react": "^17.0.1",
-    "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
-    "react-icons": "^4.1.0",
-    "react-notification-system": "^0.4.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "0.9.5",
-    "semantic-ui-react": "^2.0.1"
+    "react-scripts": "0.9.5"
   },
   "devDependencies": {},
   "scripts": {
@@ -19,5 +15,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
+    ]
   }
 }
