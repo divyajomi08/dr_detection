@@ -1,15 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PrescriptionCard from './components/Cards/PrescriptionCard';
-import PrescriptionList from './components/PrescriptionList';
+import DashboardLayout from './layouts/Layout';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Dashboard from './views/Dashboard';
+import Patient from './views/PatientAnalysis';
+import Support from './views/Support';
+import Prescription from './views/Prescription';
+import './App.css';
 
 const App = () => {
-
   return (
-    <div className="ui container">
-      <PrescriptionCard />
-      <PrescriptionList />
-      
+    <div>
+      <DashboardLayout />
+      {/*Test Components Here*/}
+      {/* <BrowserRouter>
+        <Switch>
+          <Route path='/' exact component={Dashboard} />
+          <Route path='/prescription' component={Prescription} />
+          <Route path='/patient' component={Patient} />
+          <Route path='/support' component={Support} />
+        </Switch>
+      </BrowserRouter> */}
     </div>
 
   );
