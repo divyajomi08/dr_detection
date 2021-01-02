@@ -13,14 +13,14 @@ const App = () => {
     <div>
       <DashboardLayout />
       {/*Test Components Here*/}
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Switch>
           <Route path='/' exact component={Dashboard} />
           <Route path='/prescription' component={Prescription} />
           <Route path='/patient' component={Patient} />
           <Route path='/support' component={Support} />
         </Switch>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </div>
 
   );
