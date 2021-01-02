@@ -9,7 +9,7 @@ import Prescription from './views/Prescription';
 import './App.css';
 
 const App = () => {
-  return (   
+  return (
     <div>
       <DashboardLayout />
       {/*Test Components Here*/}
