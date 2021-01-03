@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from '../components/PrescriptionCard';
-import List from '../components/PrescriptionList';
+import Card from '../components/dashboard/PrescriptionCard';
+import List from '../components/dashboard/PrescriptionList';
 
 
 const Dashboard=()=>{

@@ -8,12 +8,13 @@ import Support from './views/Support';
 import Prescription from './views/Prescription';
 import './App.css';
 
+
 const App = () => {
   return (
     <div>
       <DashboardLayout />
       {/*Test Components Here*/}
-      <BrowserRouter>
+        <BrowserRouter>
         <Switch>
           <Route path='/dashboard' exact component={Dashboard} />
           <Route path='/prescription' component={Prescription} />

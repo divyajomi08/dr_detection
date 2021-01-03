@@ -1,5 +1,5 @@
 import React from 'react';
-import List from '../components/PrescriptionList';
+import List from '../components/dashboard/PrescriptionList';
 
 const Prescription = () => {
     return (

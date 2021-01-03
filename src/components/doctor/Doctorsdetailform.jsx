@@ -356,30 +356,30 @@ const Doctorform = () => {
                 </div>
                 <div class="six wide field">
                     <label>DOB</label>
-                        <div class="ui calendar" id="example1">
-                            <div class="ui input left icon">
-                                <i class="calendar icon"></i>
-                                <input type="text" placeholder="Date/Time"></input>
-                            </div>
+                    <div class="ui calendar" id="example1">
+                        <div class="ui input left icon">
+                            <i class="calendar icon"></i>
+                            <input type="text" placeholder="Date/Time"></input>
                         </div>
+                    </div>
                 </div>
                 <div class="six wide field">
-                        <label>Gender</label>
-                        <input type="text" name="gender"></input>
-                    </div>
+                    <label>Gender</label>
+                    <input type="text" name="gender"></input>
                 </div>
-                <div class="fields">
+            </div>
+            <div class="fields">
                 <div class="eight wide field">
-                        <label>Email Address</label>
-                        <input type="text"></input>
-                    </div>
+                    <label>Email Address</label>
+                    <input type="text"></input>
                 </div>
+            </div>
             <h4 class="ui dividing header">Additional Details</h4>
             <div class="field">
                 <label>Details</label>
-                <div class="ui massive icon input">
-                    <input type="text" ></input>
-                </div>
+                <form class="ui form">
+                    <textarea placeholder="Enter" style="min-height:100px" rows="3"></textarea>
+                </form>
             </div>
             <div class="ui button" tabindex="0">Submit</div>
         </form>
