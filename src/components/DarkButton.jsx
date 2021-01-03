@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button } from 'antd';
 
 const DarkButton = (props) => {
@@ -7,3 +8,4 @@ const DarkButton = (props) => {
         </Button>
     );
 }
+export default DarkButton;

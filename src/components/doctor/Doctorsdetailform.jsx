@@ -1,4 +1,5 @@
 import React from 'react';
+import DarkButton from '../DarkButton';
 
 const Doctorform = () => {
     return (
@@ -381,7 +382,7 @@ const Doctorform = () => {
                     <textarea placeholder="Enter" style="min-height:100px" rows="3"></textarea>
                 </form>
             </div>
-            <div class="ui button" tabindex="0">Submit</div>
+            <DoctorButton text="Submit"></DoctorButton>
         </form>
     );
 };
