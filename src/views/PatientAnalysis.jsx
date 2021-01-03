@@ -1,9 +1,10 @@
 import React from 'react'
+import Form from "../components/analysis/Analysisform";
 
 const Patient=()=>{
     return (
         <div>
-            Patient Analysis
+            <Form/>
         </div>
     );
 };

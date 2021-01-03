@@ -8,6 +8,7 @@ import Support from './views/Support';
 import Prescription from './views/Prescription';
 import './App.css';
 
+
 const App = () => {
   return (
     <div>
