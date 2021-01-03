@@ -8,13 +8,17 @@ import Support from './views/Support';
 import Prescription from './views/Prescription';
 import './App.css';
 import Detailsform from './components/Detailsform';
+import Doctorform from './components/Doctorsdetailform';
+import Doctordetails from './components/Doctordetails';
 
 const App = () => {
   return (   
     <div>
       {/* <DashboardLayout /> */}
       {/*Test Components Here*/}
-      <Detailsform/>
+      {/* <Detailsform/>*/}
+      <Doctorform/>
+      <Doctordetails/>
       {/* <BrowserRouter>
         <Switch>
           <Route path='/' exact component={Dashboard} />
