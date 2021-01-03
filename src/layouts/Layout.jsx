@@ -5,14 +5,11 @@ import Dashboard from '../views/Dashboard';
 import Patient from '../views/PatientAnalysis';
 import Prescription from '../views/Prescription';
 import Support from '../views/Support';
-import useWindowDimensions from '../windowDimensions';
 
 const { Header, Content } = Layout;
 
 const DashboardLayout = () => {
-    const {height} = useWindowDimensions;
     const [selectedIndex, setSelectedIndex] = useState(0);
-    var content;
     const onChange = (data) => {
         setSelectedIndex(data);
     }
@@ -20,10 +17,10 @@ const DashboardLayout = () => {
     return (
         <Layout >
             <Sidebar onChange={e => onChange(e)} />
-            <Layout>
+            <Layout >
                 <Header className="site-layout-sub-header-background" style={{ background: 'white', padding: 0 }} />
-                <Content style={{ margin: '24px 16px 0',height:500 }}>
-                    <div style={{ background: 'white', padding: 24, height: 500 }}>
+                <Content style={{ margin: '24px 16px 0'}}>
+                    <div style={{ background: 'white', padding: 24, overflowY:'auto',maxHeight:'80vh' }}>
                         {(() => {
                             switch (selectedIndex) {
                                 case 0: return <Dashboard/>;

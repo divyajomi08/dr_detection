@@ -11,7 +11,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <div>
+    <div style={{overflowY:'hidden'}}>
       <DashboardLayout />
       {/*Test Components Here*/}
         <BrowserRouter>
