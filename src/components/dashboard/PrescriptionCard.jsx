@@ -1,4 +1,5 @@
 import React from 'react';
+import DarkButton from '../DarkButton';
 
 const Card = (props) => {
     return (
@@ -16,7 +17,7 @@ const Card = (props) => {
                         </div>
                     </div>
                     <div className="extra content">
-                        <button className="ui button">Update</button>
+                        <DarkButton text="Update"></DarkButton>
                     </div>
                 </div>
             </div>
