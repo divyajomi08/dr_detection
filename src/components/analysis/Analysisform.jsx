@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from './Imagecard';
 import { Result } from 'antd';
+import DarkButton from '../DarkButton';
 
 const Form = () => {
     return (
         <div>
         <div class="ui grid">
             <div className="row"></div>
-            <h2 className="ui horizontal divider">Analysis Results</h2>
+            <h2 className="ui horizontal divider">Results</h2>
             <div className="row">
                 <div className="six wide column">
                     <div className="sub header">Name</div>
@@ -54,8 +55,10 @@ const Form = () => {
             </div>
             <div className='row'>
                 <br></br>
-                <div class="ui button" tabindex="0">Submit</div>
+                <DarkButton text="Submit"></DarkButton> 
             </div>
+            <br></br>
+            <br></br>
         </div>
         </div>
     );
