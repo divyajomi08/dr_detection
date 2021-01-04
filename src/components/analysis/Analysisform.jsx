@@ -26,7 +26,8 @@ const Form = () => {
             <div className='row'>
                 <div className="six wide column">
                     <div className="sub header">Result</div>
-                    <div className="ui segment">Positive</div>
+                    <div className="ui green inverted segment">Positive</div>
+                    {/* <div className="ui red inverted segment">Negative</div> */}
                 </div>
             </div>
         </div>
