@@ -5,31 +5,20 @@ import Dashboard from '../views/Dashboard';
 import Patient from '../views/PatientAnalysis';
 import Prescription from '../views/Prescription';
 import Support from '../views/Support';
+import { Switch,Route, BrowserRouter } from 'react-router-dom';
+import { Routes } from "../routes";
 
 const { Header, Content } = Layout;
 
-const DashboardLayout = () => {
-    const [selectedIndex, setSelectedIndex] = useState(0);
-    const onChange = (data) => {
-        setSelectedIndex(data);
-    }
-
+const DashboardLayout = (props) => {
     return (
         <Layout >
-            <Sidebar onChange={e => onChange(e)} />
+            <Sidebar history={props.history} />
             <Layout >
                 <Header className="site-layout-sub-header-background" style={{ background: 'white', padding: 0 }} />
-                <Content style={{ margin: '24px 16px 0'}}>
-                    <div style={{ background: 'white', padding: 24, overflowY:'auto',maxHeight:'80vh' }}>
-                        {(() => {
-                            switch (selectedIndex) {
-                                case 0: return <Dashboard/>;
-                                case 1: return <Patient/>;
-                                case 2: return <Prescription/>;
-                                case 3: return <Support/>;
-                                default: return <Dashboard/>;
-                            }
-                        })()}
+                <Content style={{ margin: '24px 16px 0' }}>
+                    <div style={{ background: 'white', padding: 24, overflowY: 'auto', maxHeight: '80vh' }}>
+                        {props.children}
                     </div>
                 </Content>
             </Layout>
