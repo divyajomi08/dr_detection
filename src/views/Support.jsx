@@ -4,7 +4,7 @@ import Header from '../components/header/Header';
 const Support=()=>{
     return (
         <div>
-            <Header/>
+            support!
         </div>
     );
 };

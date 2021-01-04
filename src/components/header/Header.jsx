@@ -2,13 +2,13 @@ import React from 'react';
 
 const HeaderView = () => {
     return (
-        <div class="ui secondary pointing menu">
+        <div class="ui secondary menu">
             
-            <a class="item">
+            <a  className="ui item">
                 Profile
             </a>
-            <div class="right menu">
-                <a class="ui item active">
+            <div className="right menu">
+                <a className="ui item">
                     Logout
                 </a>
             </div>
