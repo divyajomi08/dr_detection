@@ -5,6 +5,7 @@ import Prescription from './views/Prescription';
 import Support from './views/Support';
 import  {BrowserRouter,Switch,Route}  from 'react-router-dom';
 import DashboardLayout from './layouts/Layout';
+import Error from './views/Error';
 
 const Routes = () => {
     return (
@@ -16,7 +17,7 @@ const Routes = () => {
                 <Route path="/patient" component={Patient} />
                 <Route path="/prescription" component={Prescription} />
                 <Route path="/support" component={Support} />
-                {/* <Route component={NotFound} /> */}
+                <Route component={Error} />
             </Switch>
             </DashboardLayout>
             
