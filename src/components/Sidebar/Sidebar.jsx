@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { SidebarData } from './SidebarData';
-import { Layout, Menu } from 'antd';
+import { Divider, Layout, Menu, Typography } from 'antd';
 import { Link } from 'react-router-dom';
 const { Sider } = Layout;
+const { Title } = Typography;
+
 
 const Sidebar = (props, { defaultActive, }) => {
     const location = props.history.location;
@@ -40,15 +42,19 @@ const Sidebar = (props, { defaultActive, }) => {
                 console.log(collapsed, type);
             }}
         >
-            <div className="logo" />
-                <Menu theme="dark" mode="inline" selectedKeys={[activeIndex + ""]}>
-                    {SidebarData.map((data, index) => {
-                        return (
-                            <Menu.Item key={index} onClick={() => {
-                                props.onChange(index);
-                            }}><Link to={data.path}>{data.title}</Link></Menu.Item>)
-                    })}
-                </Menu>
+            <div className="logo" style={{margin:10}}>
+                <center>
+                <img class="ui tiny circular image" alt="Logo" src="https://p7.hiclipart.com/preview/14/65/239/ico-avatar-scalable-vector-graphics-icon-doctor-with-stethoscope.jpg"/>
+                </center>
+            </div>
+            <Menu theme="dark" mode="inline" selectedKeys={[activeIndex + ""]}>
+                {SidebarData.map((data, index) => {
+                    return (
+                        <Menu.Item key={index} onClick={() => {
+                            props.onChange(index);
+                        }}><Link to={data.path}>{data.title}</Link></Menu.Item>)
+                })}
+            </Menu>
 
         </Sider>
     );
