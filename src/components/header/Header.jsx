@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const HeaderView = () => {
     const [profile, setProfile] = useState("item");
@@ -10,12 +11,12 @@ const HeaderView = () => {
             <div className="right menu" >
                 <div class="item">
                     <a className={profile} onClick={() => { setProfile("ui item active"); setlogout("item"); }}>
-                        Profile
+                        <Link to="/profile">Profile</Link>
                     </a>
                 </div>
                 <div className="item" onClick={() => { setProfile("item"); setlogout("ui item active"); }}>
                     <a className={logout} >
-                        Logout
+                    <Link to="/logout">Logout</Link>
                     </a>
                 </div>
             </div>
