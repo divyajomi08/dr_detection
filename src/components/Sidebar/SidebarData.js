@@ -9,14 +9,14 @@ export const SidebarData = [
         path: "/",
         // icon: <DashboardOutlined/>
     },
+    // {
+    //     title: "PatientAnalysis",
+    //     path: "/patient",
+    //     // icon: <BarChartOutlined />
+    // },
     {
-        title: "PatientAnalysis",
+        title: "Patients",
         path: "/patient",
-        // icon: <BarChartOutlined />
-    },
-    {
-        title: "Prescription",
-        path: "/prescription",
         // icon: <MonitorOutlined />
     },
     {
