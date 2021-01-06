@@ -4,8 +4,9 @@ import DarkButton from '../DarkButton';
 
 const Tag = () => {
     return (
-        <div className="ui centered grid">
-            <div className="row">
+        <div className="ui form">
+
+            <div className="five wide field">
                 <div class="ui left icon input">
                     <input type="text" placeholder="Search Patient..."></input>
                     <i class="users icon"></i>
@@ -13,17 +14,17 @@ const Tag = () => {
             </div>
             <br></br>
             <br></br>
-            <div className="row">
+            <div className="field">
                 <Imagecard />
             </div>
             <br>
             </br>
             <br></br>
-            <div className="row">
-                <div className="one wide column">
+            <div className="two fields">
+                <div className="four wide field">
                     <h2>Severity:</h2>
                 </div>
-                <div className="three wide column">
+                <div className="four wide field">
                     <select className="ui fluid dropdown">
                         <option value="4">4</option>
                         <option value="3">3</option>
@@ -34,7 +35,7 @@ const Tag = () => {
                 </div>
             </div>
         <br></br>
-        <div className="row">
+        <div className="field">
             <DarkButton text="Submit"></DarkButton>
         </div> 
         </div >
