@@ -20,8 +20,8 @@ export const SidebarData = [
         // icon: <MonitorOutlined />
     },
     {
-        title: "Support",
-        path: "/support",
+        title: "Tag",
+        path: "/tag",
         // icon: <DashboardOutlined />
     }
 ];  
