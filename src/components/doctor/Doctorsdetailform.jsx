@@ -374,6 +374,7 @@ const Doctorform = () => {
         <h4 className="ui dividing header">Additional Details</h4>
         <DarkButton text="Submit"></DarkButton>
         </form >
+                    
     );
 };
 export default Doctorform;
