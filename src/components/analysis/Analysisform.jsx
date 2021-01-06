@@ -6,17 +6,17 @@ import DarkButton from '../DarkButton';
 const Form = () => {
     return (
         <div>
-        <div class="ui grid">
+        <div className="ui grid">
             <div className="row"></div>
-            <h2 className="ui horizontal divider">Results</h2>
+            <h2 className="ui horizontal divider">Analysis Results</h2>
             <div className="row">
                 <div className="six wide column">
                     <div className="sub header">Name</div>
-                    <div className="ui segment">John Mayer</div>
+                    <div className="ui segment">John Lilki</div>
                 </div>
                 <div className="six wide column">
                     <div className="sub header">Patient ID</div>
-                    <div className="ui segment">278329</div>
+                    <div className="ui segment">285467</div>
                 </div>
             </div>
             <div className="sub header">Images</div>
@@ -27,7 +27,6 @@ const Form = () => {
                 <div className="six wide column">
                     <div className="sub header">Result</div>
                     <div className="ui green inverted segment">Positive</div>
-                    {/* <div className="ui red inverted segment">Negative</div> */}
                 </div>
             </div>
         </div>
@@ -36,8 +35,8 @@ const Form = () => {
                 <br></br>
                 <div className="sub header">Observation</div>
                 <br></br>
-                <div class="ui form">
-                    <div class="field">
+                <div className="ui form">
+                    <div className="field">
                         <textarea></textarea>
                     </div>
                 </div>
@@ -47,8 +46,8 @@ const Form = () => {
                 <br></br>
                 <div className="sub header">Prescription</div>
                 <br></br>
-                <div class="ui form">
-                    <div class="field">
+                <div className="ui form">
+                    <div className="field">
                         <textarea></textarea>
                     </div>
                 </div>
@@ -56,10 +55,8 @@ const Form = () => {
             </div>
             <div className='row'>
                 <br></br>
-                <DarkButton text="Submit"></DarkButton> 
+                <div className="ui button" tabindex="0">Submit</div>
             </div>
-            <br></br>
-            <br></br>
         </div>
         </div>
     );

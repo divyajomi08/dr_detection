@@ -1,9 +1,10 @@
 import React from 'react'
+import Tag from '../components/tag/Tag';
 
 const Support=()=>{
     return (
         <div>
-           Support
+           <Tag></Tag>
         </div>
     );
 };
