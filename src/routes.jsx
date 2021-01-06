@@ -2,7 +2,7 @@ import React from 'react'
 import Dashboard from './views/Dashboard';
 import Analysis from './views/PatientAnalysis';
 import Patient from './views/Patient';
-import Support from './views/Support';
+import Tagging from './views/Tag';
 import  {BrowserRouter,Switch,Route}  from 'react-router-dom';
 import DashboardLayout from './layouts/Layout';
 import Error from './views/Error';
@@ -18,7 +18,7 @@ const Routes = () => {
                 <Route path="/patient" exact component={Patient} />
                 <Route path="/patient/285467" component={Analysis} />
                 <Route path="/profile" component={Profile} />
-                <Route path="/support" component={Support} />
+                <Route path="/tag" component={Tagging} />
                 <Route component={Error} />
             </Switch>
             </DashboardLayout>

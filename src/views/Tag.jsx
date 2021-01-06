@@ -1,7 +1,7 @@
 import React from 'react'
 import Tag from '../components/tag/Tag';
 
-const Support=()=>{
+const Tagging=()=>{
     return (
         <div>
            <Tag></Tag>
@@ -9,4 +9,4 @@ const Support=()=>{
     );
 };
 
-export default Support;
+export default Tagging;
