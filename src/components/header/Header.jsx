@@ -16,7 +16,7 @@ const HeaderView = () => {
                 </div>
                 <div className="item" onClick={() => { setProfile("item"); setlogout("ui item active"); }}>
                     <a className={logout} >
-                    <Link to="/logout">Logout</Link>
+                    <Link to="/login">Logout</Link>
                     </a>
                 </div>
             </div>
