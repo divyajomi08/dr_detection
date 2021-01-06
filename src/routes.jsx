@@ -6,6 +6,7 @@ import Tagging from './views/Tag';
 import  {BrowserRouter,Switch,Route}  from 'react-router-dom';
 import DashboardLayout from './layouts/Layout';
 import Error from './views/Error';
+import Login from './pages/Login';
 import Profile from './views/Profile';
 
 const Routes = () => {
@@ -19,6 +20,7 @@ const Routes = () => {
                 <Route path="/patient/285467" component={Analysis} />
                 <Route path="/profile" component={Profile} />
                 <Route path="/tag" component={Tagging} />
+                <Route path="/Login" component={Login} />
                 <Route component={Error} />
             </Switch>
             </DashboardLayout>
