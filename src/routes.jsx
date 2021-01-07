@@ -12,6 +12,8 @@ import Profile from './views/Profile';
 const Routes = () => {
     return (
         <BrowserRouter>
+        <Switch>
+        <Route path="/Login" component={Login} />
         <Route render={(props)=>(
             <DashboardLayout {...props}>
                 <Switch>
@@ -20,12 +22,13 @@ const Routes = () => {
                 <Route path="/patient/285467" component={Analysis} />
                 <Route path="/profile" component={Profile} />
                 <Route path="/tag" component={Tagging} />
-                <Route path="/Login" component={Login} />
                 <Route component={Error} />
             </Switch>
             </DashboardLayout>
             
             )}/>
+        </Switch>
+        
         </BrowserRouter>
     );
 }
