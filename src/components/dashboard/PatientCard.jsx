@@ -16,9 +16,9 @@ const Card = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="extra content">
+                    {/* <div className="extra content">
                         <DarkButton text="Update"></DarkButton>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
