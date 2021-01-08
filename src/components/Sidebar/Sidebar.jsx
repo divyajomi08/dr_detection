@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { SidebarData } from './SidebarData';
-import { Divider, Layout, Menu, Typography } from 'antd';
+import {Layout, Menu } from 'antd';
 import { Link } from 'react-router-dom';
 const { Sider } = Layout;
-const { Title } = Typography;
 
 
 const Sidebar = (props, { defaultActive, }) => {
@@ -44,7 +43,7 @@ const Sidebar = (props, { defaultActive, }) => {
         >
             <div className="logo" style={{margin:10}}>
                 <center>
-                <img class="ui tiny circular image" alt="Logo" src="https://p7.hiclipart.com/preview/14/65/239/ico-avatar-scalable-vector-graphics-icon-doctor-with-stethoscope.jpg"/>
+                <img className="ui tiny circular image" alt="Logo" src="https://p7.hiclipart.com/preview/14/65/239/ico-avatar-scalable-vector-graphics-icon-doctor-with-stethoscope.jpg"/>
                 </center>
             </div>
             <Menu theme="dark" mode="inline" selectedKeys={[activeIndex + ""]}>

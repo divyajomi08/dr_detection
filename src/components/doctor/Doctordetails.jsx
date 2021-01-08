@@ -2,7 +2,7 @@ import React from 'react';
 
 const Doctordetails = () => {
     return (
-        <div class="ui centered grid" >
+        <div className="ui centered grid" >
             {/* <div className="ui equal width grid"> */}
             <div className="row"></div>
             <h4 className="ui horizontal divider">Personal Information</h4>

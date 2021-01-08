@@ -1,7 +1,5 @@
 import React from 'react';
 import Image from './Imagecard';
-import { Result } from 'antd';
-import DarkButton from '../DarkButton';
 
 const Form = () => {
     return (

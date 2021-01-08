@@ -2,7 +2,7 @@ import React from 'react';
 
 const Detailsform = () => {
     return (
-        <div class="ui centered grid" >
+        <div className="ui centered grid" >
             {/* <div className="ui equal width grid"> */}
 
             <h4 className="ui horizontal divider">Personal Information</h4>

@@ -7,9 +7,9 @@ const Tag = () => {
         <div className="ui form">
 
             <div className="five wide field">
-                <div class="ui left icon input">
+                <div className="ui left icon input">
                     <input type="text" placeholder="Search Patient..."></input>
-                    <i class="users icon"></i>
+                    <i className="users icon"></i>
                 </div>
             </div>
             <br></br>
