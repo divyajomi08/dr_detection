@@ -1,6 +1,4 @@
 import React from 'react';
-import DarkButton from '../DarkButton';
-
 const Card = (props) => {
     return (
         <div className="column">

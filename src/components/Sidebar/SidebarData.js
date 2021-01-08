@@ -1,7 +1,4 @@
-import React from 'react';
-// import DashboardOutlined from '@ant-design/icons';
-// import BarChartOutlined from '@ant-design/icons';
-// import MonitorOutlined from '@ant-design/icons';
+
 
 export const SidebarData = [
     {

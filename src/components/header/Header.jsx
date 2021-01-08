@@ -7,17 +7,17 @@ const HeaderView = () => {
 
     return (
         <div className="ui secondary menu" >
-            <img class="ui image" alt="Logo"  style={{ marginLeft:10,width: 60, height: 60 }} src="https://play-lh.googleusercontent.com/83gl9FJDgo-bOdKb5hteRVWxCK_6ZKkAMPJCWxMwPsO1SHbiWvqvwgPwmHfUuyzpMQ=s180-rw"></img>
+            <img className="ui image" alt="Logo" style={{ marginLeft: 10, width: 60, height: 60 }} src="https://play-lh.googleusercontent.com/83gl9FJDgo-bOdKb5hteRVWxCK_6ZKkAMPJCWxMwPsO1SHbiWvqvwgPwmHfUuyzpMQ=s180-rw"></img>
             <div className="right menu" >
-                <div class="item">
-                    <a className={profile} onClick={() => { setProfile("ui item active"); setlogout("item"); }}>
-                        <Link to="/profile">Profile</Link>
-                    </a>
+                <div className="item">
+                    <Link to="/profile" className={profile} onClick={() => { setProfile("ui item active"); setlogout("item"); }}>
+                        Profile</Link>
+
                 </div>
                 <div className="item" onClick={() => { setProfile("item"); setlogout("ui item active"); }}>
-                    <a className={logout} >
-                    <Link to="/login">Logout</Link>
-                    </a>
+                    <Link to="/login" className={logout} >
+                            Logout
+                    </Link>
                 </div>
             </div>
 

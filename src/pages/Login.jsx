@@ -1,40 +1,43 @@
-import React from 'react';
+import React from 'react'
+import { Link } from 'react-router-dom';
 
-const Login =()=>{
-    return(
-        <div class="ui middle aligned center aligned grid">
-  <div class="column">
-    <h2 class="ui image header">
-      <div class="content">
-        Log-in to your account
-      </div>
-    </h2>
-    <form action="https://s.codepen.io/voltron2112/debug/PqrEPM?" method="get" class="ui large form">
-      <div class="ui stacked secondary  segment">
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="user icon"></i>
-            <input type="text" name="email" placeholder="E-mail address"></input>
-          </div>
+const Login = () => {
+  return (
+    <div className="ui middle aligned center aligned grid" style={{ height: '100vh', backgroundColor: '#DADADA',overflow:'hidden' }}>
+      <div className="column" style={{ maxWidth: 450 }}>
+        <h2 className="ui teal image header">
+          <div className="content">
+            Log-in to your account
         </div>
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password"></input>
+        </h2>
+        <form className="ui large form">
+          <div className="ui stacked segment">
+            <div className="field">
+              <div className="ui left icon input">
+                <i className="user icon"></i>
+                <input type="text" name="email" placeholder="E-mail address" />
+              </div>
+            </div>
+            <div className="field">
+              <div className="ui left icon input">
+                <i className="lock icon"></i>
+                <input type="password" name="password" placeholder="Password" />
+              </div>
+            </div>
+            <Link to="/">            <div className="ui fluid large teal submit button">Login</div>
+            </Link>
           </div>
+
+          <div className="ui error message"></div>
+
+        </form>
+
+        <div className="ui message">
+          New to us? <a href="#">Sign Up</a>
         </div>
-        <div class="ui fluid large teal submit button">Login</div>
       </div>
-
-      <div class="ui error message"></div>
-
-    </form>
-
-    <div class="ui message">
-      New to us? <a href="https://s.codepen.io/voltron2112/debug/PqrEPM?">Register</a>
     </div>
-  </div>
-</div>
-    );
+  );
 };
+
 export default Login;
