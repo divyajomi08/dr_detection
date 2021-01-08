@@ -6,7 +6,7 @@ const Tag = () => {
     return (
         <div className="ui form">
 
-            <div className="five wide field">
+            <div className="field">
                 <div className="ui left icon input">
                     <input type="text" placeholder="Search Patient..."></input>
                     <i className="users icon"></i>
