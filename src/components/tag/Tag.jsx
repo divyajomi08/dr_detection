@@ -1,22 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Imagecard from './Image';
 import DarkButton from '../DarkButton';
 
 const Tag = () => {
+    const [patient,setPatient]=useState("");
     return (
         <div className="ui form">
-
             <div className="field">
                 <div className="ui left icon input">
-                    <input type="text" placeholder="Search Patient..."></input>
+                    <input type="text" onChange={(event)=>setPatient(event.target.value)} placeholder="Search Patient..."></input>
                     <i className="users icon"></i>
                 </div>
             </div>
             <br></br>
             <br></br>
             <div className="field">
-                <Imagecard />
-                
+                {patient==="285467" ? <Imagecard /> : null}
+
             </div>
             <br>
             </br>
@@ -35,10 +35,10 @@ const Tag = () => {
                     </select>
                 </div>
             </div>
-        <br></br>
-        <div className="field">
-            <DarkButton text="Submit"></DarkButton>
-        </div> 
+            <br></br>
+            <div className="field">
+                <DarkButton text="Submit"></DarkButton>
+            </div>
         </div >
     );
 };

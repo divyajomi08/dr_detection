@@ -6,7 +6,7 @@ import Routes from './routes';
 
 const App = () => {
   return (
-    <div style={{overflowY:'hidden'}}>
+    <div style={{overflow:'hidden'}}>
       <Routes/>
     </div>
 
